@@ -167,8 +167,8 @@ enum JBSourceMode {
     imageView.backgroundColor = [UIColor blackColor];
     
     // Calcule the maximum move allowed.
-    float maxMoveX = optimusWidth - frameWidth;
-    float maxMoveY = optimusHeight - frameHeight;
+    float maxMoveX = (optimusWidth - frameWidth) / 4;
+    float maxMoveY = (optimusHeight - frameHeight) / 4;
     
     float rotation = (arc4random() % 9) / 100;
     int moveType = arc4random() % 4;
